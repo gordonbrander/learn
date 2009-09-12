@@ -3,7 +3,7 @@ Contributors: gordonbrander
 Donate link: ?  
 Tags: learn,beginner,simple,boilerplate  
 Requires at least: 2.7
-Tested up to: 2.8.3
+Tested up to: 2.8.4
 Stable tag: 
 
 A simple theme for learning WordPress theme development. It has lots of comments to help you along.

@@ -41,7 +41,7 @@ if ( comments_open() ) : ?>
 
 	<div id="respond">
 
-		<h4><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
+		<h4><?php comment_form_title( 'Post a Comment', 'Post a Reply to %s' ); ?></h4>
 		<small><?php cancel_comment_reply_link(); ?></small>
 
 	<?php // Is the user required to log in to post? If so, show a prompt.
