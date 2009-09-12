@@ -10,42 +10,40 @@ WordPress uses index.php to display the content of the page. You can add special
 
 <?php get_header(); ?>
 
-	<div id="content">
+<div id="content">
 
-	<?php
-	/*
-	This is The Loop. It cycles through all the posts and displays them based on the markup you put inside. <http://codex.wordpress.org/The_Loop>
-	*/
-	if (have_posts()) : 
-		while (have_posts()) : the_post(); ?>
+<?php
+/*
+This is The Loop. It cycles through all the posts and displays them based on the markup you put inside. <http://codex.wordpress.org/The_Loop>
+*/
+if (have_posts()) : 
+	while (have_posts()) : the_post(); ?>
 
-			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-				<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		
+			<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-				<div class="entry-content">
-					<?php the_content('Continued&hellip;'); ?>
-				</div>
-
-				<p><small>
-					Published on <?php the_time('F jS, Y') ?> in 
-					<?php the_category(', ') ?>
-					<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
-					<?php edit_post_link('Edit', '', ' &bull; '); ?>
-					<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-				</small></p>
-				
+			<div class="entry-content">
+				<?php the_content('Continued&hellip;'); ?>
 			</div>
 
-		<?php endwhile; ?>
+			<p><small>
+				Published on <?php the_time('F jS, Y') ?> in 
+				<?php the_category(', ') ?>
+				<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
+				<?php edit_post_link('Edit', '', ' &bull; '); ?>
+				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+			</small></p>
+			
+		</div>
 
-		<?php if (!is_single()): ?>
-			<p class="pagination"><?php posts_nav_link(); ?></p>
-		<?php endif ?>
-		
-	<?php endif; ?>
+	<?php endwhile; ?>
 
-	</div>
+	<p class="pagination"><?php posts_nav_link(); ?></p>
+	
+<?php endif; ?>
+
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
