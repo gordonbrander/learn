@@ -32,9 +32,7 @@ We're going to add a pingback discovery link for pingback servers.
 First, we create a function:
 */
 function gbl_render_pingback_link() {
-	$html = '<link rel="pingback" href="' . get_bloginfo('pingback_url') . '" />';
-
-	echo $html;
+	echo '<link rel="pingback" href="' . get_bloginfo('pingback_url') . '" />';
 }
 /*
 Here's where the magic happens. add_action is a WordPress function that lets you "hook" into different named areas. We'll hook into wp_head, which means this function will get run where the wp_head() tag is (in the <head> tag in header.php).

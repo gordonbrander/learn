@@ -1,3 +1,10 @@
+<?php /*
+
+This file displays the page content for the search results view. It overrides index.php.
+Check out index.php for more info.
+
+*/ ?>
+
 <?php get_header(); ?>
 
 <div id="content">
@@ -11,7 +18,7 @@
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
-				<h2 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<h3 class="entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
 				<div class="entry-summary">
 					<?php the_excerpt(); ?>
@@ -28,6 +35,9 @@
 			</div>
 
 		<?php endwhile; ?>
+		
+		<p class="pagination"><?php posts_nav_link(); ?></p>
+		
 	<?php else : ?>
 
 		<p>No posts found. Try a different search?</p>

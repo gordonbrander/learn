@@ -5,7 +5,7 @@ Check out index.php for more info.
 
 */ ?>
 
-<?php get_header(); // grabs header.php ?>
+<?php get_header(); ?>
 
 <div id="content">
 
@@ -37,5 +37,5 @@ endif; ?>
 
 </div>
 
-<?php get_sidebar(); // grabs sidebar.php ?>
-<?php get_footer(); // grabs footer.php ?>
+<?php get_sidebar(); ?>
+<?php get_footer(); ?>
