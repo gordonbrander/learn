@@ -1,5 +1,9 @@
 <?php /*
-	asdf
+This file is the core of your WordPress theme.
+index.php and style.css are the only required files for a theme. <http://codex.wordpress.org/Theme_Development#Basic_Templates>
+
+WordPress uses index.php to display the content of the page. You can add special template files that will override it, like search.php, single.php, archive.php and more <http://codex.wordpress.org/Template_Hierarchy#Examples>
+
 */ ?>
 <?php get_header(); ?>
 

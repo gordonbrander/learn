@@ -1,4 +1,4 @@
-=== Plugin Name ===  
+=== Theme Name ===  
 Contributors: gordonbrander  
 Donate link: ?  
 Tags: learn,beginner,simple,boilerplate  
@@ -10,6 +10,7 @@ A simple theme with helpful comments, designed to help beginners learn WordPress
 
 == Description ==
 
+A conceptually simple theme for learning WordPress theme development. It has lots of comments to help you along.
 
 == Installation ==
 
@@ -31,7 +32,7 @@ You can add internationalization to it yourself (it's not too difficult). Intern
 
 = I found a bug. Where can I submit it? =
 
-If you've run into unexpected behavior while using the plugin, please file a bug report at
+If you've run into unexpected behavior while using the plugin, please file a bug report at <http://github.com/gordonbrander/learn/issues>
 
 == Screenshots ==
 
