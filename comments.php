@@ -15,9 +15,7 @@ if ( post_password_required() ) : ?>
 <?php
 	return; // return = stop here, don't display the rest of this file.
 endif;
-?>
 
-<?php
 /*
 If there are any comments, display them along with a header and pagination
 */
@@ -34,9 +32,8 @@ if ( have_comments() ) : ?>
 		<?php next_comments_link() ?>
 	</div>
 
-<?php endif; // end if have_comments ?>
+<?php endif; // end if have_comments
 
-<?php
 /*
 Is commenting open? If it is, show the comment form.
 */
