@@ -12,6 +12,8 @@ automatic_feed_links();
 
 /*
 Register a dynamic sidebar. This tells WordPress that you have a dynamic sidebar you want to use. We'll use this one in sidebar.php.
+
+More here: <http://codex.wordpress.org/Function_Reference/register_sidebar>
 */
 register_sidebar(array(
 	'name' => 'Sidebar',
