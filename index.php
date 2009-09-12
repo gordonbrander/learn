@@ -12,8 +12,12 @@ WordPress uses index.php to display the content of the page. You can add special
 
 	<div id="content">
 
-	<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
+	<?php
+	/*
+	This is The Loop. It cycles through all the posts and displays them based on the markup you put inside. <http://codex.wordpress.org/The_Loop>
+	*/
+	if (have_posts()) : 
+		while (have_posts()) : the_post(); ?>
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			
