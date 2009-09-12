@@ -42,7 +42,7 @@ You can add internationalization to it yourself (it's not too difficult). Intern
 
 = I found a bug. Where can I submit it? =
 
-If you've run into unexpected behavior while using the plugin, please file a bug report at <http://github.com/gordonbrander/learn/issues>
+If you've run into unexpected behavior while using the theme, do please file a bug report at <http://github.com/gordonbrander/learn/issues>
 
 == Screenshots ==
 
