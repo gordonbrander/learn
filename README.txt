@@ -20,6 +20,16 @@ A conceptually simple theme for learning WordPress theme development. It has lot
 
 == Frequently Asked Questions ==
 
+= Will you ad "X" to the theme? =
+
+I love hearing about your great ideas! If you have an idea, send it my way. If I think it fits within the theme's goal of being as conceptually simple and helpful as possible, I'll add it.
+
+If I don't add it, you can always add it yourself and release your work. That's the beauty of open source!
+
+= What are those &lt;?php ?&gt; things? =
+
+WordPress is software written in a language called PHP. Basically, wherever you see those tags, WordPress is doing some kind of magic. An intro to PHP is outside the scope of this document, but the good news is, you don't have to know much to modify WordPress! Try tinkering and see how far that gets you. If you want to learn more, try getting an *intro to programming* book, or dig around here <http://www.php.net/tut.php>.
+
 = What's up with the doctype? =
 
 It's HTML5 <http://www.w3.org/TR/html5/>.
