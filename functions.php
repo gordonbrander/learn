@@ -24,19 +24,25 @@ register_sidebar(
 	)
 );
 
-/* Say hello to a WordPress hook. These guys are a really important part of WordPress, because they allow you to add things to the theme without changing the actual theme code.
-*/
+/*
+Say hello to a WordPress hook. These guys are a really important part of WordPress, because they allow you to add things to the theme without changing the actual theme code.
 
+We're going to add a pingback discovery link for pingback servers.
+
+First, we create a function:
+*/
 function gbl_render_pingback_link() {
-	/* 
-		First, we'll add our pingback link to a variable.
-		Pingback links tell pingback services where to go to add a ping comment to a post. If that sounded too complex, don't worry about it.
-	*/
 	$html = '<link rel="pingback" href="' . get_bloginfo('pingback_url') . '" />';
-	
-	// Output it.
+
 	echo $html;
 }
+/*
+Here's where the magic happens. add_action is a WordPress function that lets you "hook" into different named areas. We'll hook into wp_head, which means this function will get run where the wp_head() tag is (in the <head> tag in header.php).
+
+Learn more:
+<http://codex.wordpress.org/Plugin_API/Action_Reference/wp_head>
+<http://codex.wordpress.org/Plugin_API>
+*/
 add_action('wp_head','gbl_render_pingback_link');
 
 ?>

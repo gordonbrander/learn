@@ -10,7 +10,7 @@
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
-<?php wp_head(); // leave this here: it's for plugins ?>
+<?php wp_head(); // leave this here: it's a hook for plugins ?>
 </head>
 <body <?php body_class(); ?>>
 

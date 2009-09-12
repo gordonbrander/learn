@@ -6,6 +6,6 @@
 	</p>
 </div>
 
-<?php wp_footer(); // leave this here: it's for plugins ?>
+<?php wp_footer(); // leave this here: it's a hook for plugins ?>
 </body>
 </html>
