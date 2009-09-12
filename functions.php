@@ -11,14 +11,14 @@ Automatically output feed autodiscovery links in the <head> through wp_head().
 automatic_feed_links();
 
 /*
-
+Register a dynamic sidebar. This tells WordPress that you have a dynamic sidebar you want to use. We'll use this one in sidebar.php.
 */
-if ( function_exists('register_sidebar') ) {
-	register_sidebar(array(
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h2 class="widget-title">',
-		'after_title' => '</h2>',
-	));
-}
+register_sidebar(array(
+	'name' => 'Sidebar',
+	'id' => 'sidebar-0',
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
+	'after_widget' => '</div>',
+	'before_title' => '<h2 class="widget-title">',
+	'after_title' => '</h2>',
+));
 ?>
