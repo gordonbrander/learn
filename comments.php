@@ -58,10 +58,10 @@
 
 		<?php endif; ?>
 
-			<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+			<p><textarea name="comment" id="comment" cols="82" rows="10" tabindex="4"></textarea></p>
 
 			<p>
-				<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+				<input name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" />
 				<?php  ?>
 			</p>
 <?php 
