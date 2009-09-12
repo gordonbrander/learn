@@ -22,7 +22,7 @@ A conceptually simple theme for learning WordPress theme development. It has lot
 
 = What's up with the doctype? =
 
-It's [HTML5] (http://www.w3.org/TR/html5/).
+It's HTML5 <http://www.w3.org/TR/html5/>.
 
 = Why isn't this theme internationalized? =
 

@@ -23,4 +23,20 @@ register_sidebar(
 		'after_title' => '</h2>'
 	)
 );
+
+/* Say hello to a WordPress hook. These guys are a really important part of WordPress, because they allow you to add things to the theme without changing the actual theme code.
+*/
+
+function gbl_render_pingback_link() {
+	/* 
+		First, we'll add our pingback link to a variable.
+		Pingback links tell pingback services where to go to add a ping comment to a post. If that sounded too complex, don't worry about it.
+	*/
+	$html = '<link rel="pingback" href="' . get_bloginfo('pingback_url') . '" />';
+	
+	// Output it.
+	echo $html;
+}
+add_action('wp_head','gbl_render_pingback_link');
+
 ?>
