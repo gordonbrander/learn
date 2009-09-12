@@ -1,10 +1,13 @@
 <?php /*
+
 This file is the core of your WordPress theme.
+
 index.php and style.css are the only required files for a theme. <http://codex.wordpress.org/Theme_Development#Basic_Templates>
 
-WordPress uses index.php to display the content of the page. You can add special template files that will override it, like search.php, single.php, archive.php and more <http://codex.wordpress.org/Template_Hierarchy#Examples>
+WordPress uses index.php to display the content of the page. You can add special template files that will override it, like search.php, 404.php, archive.php and more: <http://codex.wordpress.org/Template_Hierarchy#Examples>
 
 */ ?>
+
 <?php get_header(); ?>
 
 	<div id="content">
@@ -20,12 +23,18 @@ WordPress uses index.php to display the content of the page. You can add special
 					<?php the_content('Continued&hellip;'); ?>
 				</div>
 
-				<p><small>Published on <?php the_time('F jS, Y') ?> in <?php the_category(', ') ?> <?php the_tags('and tagged with  ', ', ', ''); ?> &bull; <?php edit_post_link('Edit', '', ' &bull; '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></small></p>
+				<p><small>
+					Published on <?php the_time('F jS, Y') ?> in 
+					<?php the_category(', ') ?>
+					<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
+					<?php edit_post_link('Edit', '', ' &bull; '); ?>
+					<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+				</small></p>
 				
 			</div>
 
 		<?php endwhile; ?>
-		
+
 		<?php if (!is_single()): ?>
 			<p class="pagination"><?php posts_nav_link(); ?></p>
 		<?php endif ?>
@@ -35,5 +44,4 @@ WordPress uses index.php to display the content of the page. You can add special
 	</div>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

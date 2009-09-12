@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="content">
+<div id="content">
 	
 	<h2>Search Results</h2>
 	
@@ -17,7 +17,13 @@
 					<?php the_excerpt(); ?>
 				</div>
 
-				<p><small>Published on <?php the_time('F jS, Y') ?> in <?php the_category(', ') ?> <?php the_tags('and tagged with  ', ', ', ''); ?> &bull; <?php edit_post_link('Edit', '', ' &bull; '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></small></p>
+				<p><small>
+					Published on <?php the_time('F jS, Y') ?> in 
+					<?php the_category(', ') ?>
+					<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
+					<?php edit_post_link('Edit', '', ' &bull; '); ?>
+					<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
+				</small></p>
 				
 			</div>
 
@@ -28,8 +34,7 @@
 
 	<?php endif; ?>
 
-	</div>
+</div>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>

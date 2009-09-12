@@ -7,6 +7,7 @@
 <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -17,7 +18,7 @@
 
 <div id="header">
 	
-	<h1 class="site-name"><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
+	<h1 class="site-name"><a href="<?php echo get_option('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
 	<p class="site-description"><?php bloginfo('description'); ?></p>
 
 </div>
