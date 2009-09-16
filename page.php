@@ -1,6 +1,6 @@
 <?php /*
 
-This file displays the content for the permalinked view of posts. It overrides index.php.
+This file displays the content for the permalinked view of pages. It overrides index.php.
 Check out index.php for more info.
 
 */ ?>
@@ -21,19 +21,11 @@ if (have_posts()) :
 				<?php the_content('Continued&hellip;'); ?>
 			</div>
 
-			<p><small>
-				Published on <?php the_time('F jS, Y') ?> in 
-				<?php the_category(', ') ?>
-				<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
-				<?php edit_post_link('Edit', '', ''); ?>
-			</small></p>
-			
-			<?php comments_template(); // grabs comments.php ?>
 		</div>
 
-<?php 
-	endwhile;
-endif; ?>
+	<?php endwhile; ?>
+	
+<?php endif; ?>
 
 </div>
 
