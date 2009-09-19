@@ -22,7 +22,7 @@ A conceptually simple theme for learning WordPress theme development. It has lot
 
 = Will you ad "X" to the theme? =
 
-I would love to hear your great ideas! If you have an idea, send it my way. If I think it fits within the theme's goal of being as conceptually simple and helpful as possible, I'll add it.
+Have a great idea? I would love to hear about it! Send it my way. If I think it fits within the theme's goal of being as conceptually simple and helpful as possible, I'll add it.
 
 If I don't add it, you can always add it yourself and release your work. That's the beauty of open source!
 
