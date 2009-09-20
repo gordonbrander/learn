@@ -28,7 +28,11 @@ If I don't add it, you can always add it yourself and release your work. That's 
 
 = What are those &lt;?php ?&gt; things? =
 
-WordPress is software written in a language called PHP. Basically, wherever you see those tags, WordPress is doing some kind of magic. An intro to PHP is outside the scope of this document, but the good news is, you don't have to know much to modify WordPress! Try tinkering and see how far that gets you. If you want to learn more, try getting an *intro to programming* book, or dig around here <http://www.php.net/tut.php>.
+WordPress is software written in a language called PHP. Basically, wherever you see those tags, WordPress is doing it's magic. An intro to PHP is outside the scope of this document, but the good news is, you don't have to know much to modify WordPress! Try tinkering and see how far that gets you. If you want to learn more, try getting an *intro to programming* book, or dig around here <http://www.php.net/tut.php>.
+
+= Where can I get a list of all the WordPress functions I can use in my theme? =
+
+<http://codex.wordpress.org/>.
 
 = What's up with the doctype? =
 

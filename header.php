@@ -1,6 +1,8 @@
 <?php
 /*
 header.php contains the "top part" of your theme; the <head> tag, stylesheet links, scripts and maybe a global header with some navigation. Since these are likely to be the same across your entire site, it's easier to have them all in this one place instead of copied and pasted into lots of files. It gets pulled into the other templates with the get_header() tag.
+
+More: <http://codex.wordpress.org/Function_Reference/get_header>
 */
 ?>
 <!DOCTYPE html>
