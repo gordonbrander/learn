@@ -1,6 +1,6 @@
 <?php /*
 
-This file displays the page content for the search results view. It overrides index.php.
+This file displays the content for the search results view. It overrides index.php.
 Check out index.php for more info.
 
 */ ?>

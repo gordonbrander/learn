@@ -1,6 +1,8 @@
 <?php
 /*
-This file contains the logic and markup for the comments and comment form. It's kind of a big hairy mess, but don't be scared off: you can do it!
+This file contains the logic and markup for the comments and comment form. It's pulled into your theme via the comments_template() template tag.
+
+This file is kind of a big hairy mess, but don't be scared off: you can do it!
 */
 
 // Do not delete these lines
