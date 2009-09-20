@@ -1,8 +1,6 @@
 Copyright (c) 2009 Gordon Brander. All rights reserved.
 http://gordonbrander.com
 
-This program may be used with WordPress software <http://wordpress.org> as a theme. The theme is made up of everything in this directory.
-
 Released under the GPL license <http://www.opensource.org/licenses/gpl-license.php>.
 
 ---

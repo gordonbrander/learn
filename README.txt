@@ -1,7 +1,7 @@
 === Theme Name ===  
 Contributors: gordonbrander  
 Donate link: ?  
-Tags: learn,beginner,simple,boilerplate  
+Tags: learn,beginner,simple,documentation,single-column,threaded-comments
 Requires at least: 2.7
 Tested up to: 2.8.4
 Stable tag: 
@@ -36,9 +36,11 @@ It's HTML5 <http://www.w3.org/TR/html5/>.
 
 = Why isn't this theme internationalized? =
 
-The goal of this theme is to be a starting point that is as conceptually simple as possible. I figured when you're just starting out, internationalization is too complex to wrap your head around on top of everything else.
+The goal of this theme is to be a starting point that is as conceptually simple as possible. I figure when you're starting out internationalization is too much to wrap your head around on top of everything else.
 
-You can add internationalization to it yourself (it's not too difficult). Internationalization, or I18n is when you use a programming language to replace sentences and strings of text in the theme with a translation from your own language. WordPress supports language packs you can install, making this super easy. Learn more about it here <http://codex.wordpress.org/I18n_for_WordPress_Developers>
+Internationalization, or I18n is when you use a programming language to replace strings of text in the theme with a translation from your own language. WordPress supports language packs you can install so people of all languages can easily use it. Learn more about I18n here <http://codex.wordpress.org/I18n_for_WordPress_Developers>
+
+As with anything in this theme, you can add internationalization to it yourself (it's not too difficult) and release the results.
 
 = I found a bug. Where can I submit it? =
 
