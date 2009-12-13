@@ -1,9 +1,10 @@
-<?php /*
-
-This file displays the content for the permalinked view of posts. It overrides index.php.
-Check out index.php for more info.
-
-*/ ?>
+<?php
+/*
+ * single.php displays the content for the "single", aka "permalinked" view of posts.
+ * It overrides index.php.
+ * See index.php for more info on page templates.
+ */
+?>
 
 <?php get_header(); ?>
 

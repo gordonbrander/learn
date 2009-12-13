@@ -1,9 +1,10 @@
-<?php /*
-
-This file displays the content for the search results view. It overrides index.php.
-Check out index.php for more info.
-
-*/ ?>
+<?php
+/*
+ * search.php displays the content for the search results view.
+ * It overrides index.php.
+ * See index.php for more info on page templates.
+ */
+?>
 
 <?php get_header(); ?>
 

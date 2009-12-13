@@ -1,26 +1,22 @@
 <?php
 /*
-This file contains the logic and markup for the comments and comment form. It's pulled into your theme via the comments_template() template tag.
+ * This file contains the logic and markup for the comments and comment form.
+ * It's pulled into your theme via the comments_template() template tag.
+ * This file is kind of a big hairy mess, but don't be scared off: you can do it!
+ */
 
-This file is kind of a big hairy mess, but don't be scared off: you can do it!
-*/
-
-// Do not delete these lines
+// Do not delete these lines. They are here for security reasons.
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not load this page directly. Thanks!');
 
-/* 
-Check if the post is password-protected. If it is, show a prompt instead of the comments
-*/
+// Check if the post is password-protected. If it is, show a prompt instead of the comments.
 if ( post_password_required() ) : ?>
 	<p>This post is password protected. Enter the password to view comments.</p>
 <?php
-	return; // return = stop here, don't display the rest of this file.
+	return; // after showing the prompt, stop here, don't display the rest of this file.
 endif;
 
-/*
-If there are any comments, display them along with a header and pagination
-*/
+// If there are any comments, display them.
 if ( have_comments() ) : ?>
 
 	<h3 id="comments"><?php comments_number('No Comments', 'One Comment', '% Comments' );?></h3>
@@ -34,11 +30,9 @@ if ( have_comments() ) : ?>
 		<?php next_comments_link() ?>
 	</div>
 
-<?php endif; // end if have_comments
+<?php endif;
 
-/*
-Is commenting open? If it is, show the comment form.
-*/
+// Is commenting open? If it is, show the comment form.
 if ( comments_open() ) : ?>
 
 	<div id="respond">
@@ -46,20 +40,24 @@ if ( comments_open() ) : ?>
 		<h4><?php comment_form_title( 'Post a Comment', 'Post a Reply to %s' ); ?></h4>
 		<small><?php cancel_comment_reply_link(); ?></small>
 
-	<?php // Is the user required to log in to post? If so, show a prompt.
+	<?php
+	// Is the user required to log in to post? If so, show a prompt.
 	if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 		<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
-	<?php // ...otherwise, show the comment form.
+	<?php
+	// ...otherwise, show the comment form.
 	else : ?>
 
 		<form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-		<?php // Are they logged in?
+		<?php
+		// Is the user logged in? Show a friendly "You're logged in" message.
 		if ( is_user_logged_in() ) : ?>
 
 			<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
 
-		<?php // ...no? then let's show a simple identity form
+		<?php
+		// ...no? Then let's show a simple identity form.
 		else : ?>
 
 			<p>
@@ -86,11 +84,11 @@ if ( comments_open() ) : ?>
 			<p>
 				<input name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" />
 			</p>
-<?php 
+			<?php 
 			// These two functions do some hidden-field voodoo so WordPress understands where the comment came from, where it's going, etc. Don't take them out!
 			comment_id_fields();
 			do_action('comment_form', $post->ID);
-?>
+			?>
 		</form>
 	<?php endif; // end if registration required and not logged in ?>
 	
