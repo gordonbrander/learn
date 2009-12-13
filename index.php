@@ -35,7 +35,7 @@ if (have_posts()) :
 			<p><small>
 				Published on <?php the_time('F jS, Y') ?> in 
 				<?php the_category(', ') ?>
-				<?php the_tags('and tagged with  ', ', ', ''); ?> &bull;
+				<?php the_tags('and tagged ', ', ', ''); ?> &bull;
 				<?php edit_post_link('Edit', '', ' &bull; '); ?>
 				<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
 			</small></p>
