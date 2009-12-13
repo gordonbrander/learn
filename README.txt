@@ -1,6 +1,6 @@
 === Theme Name ===
 Contributors: gordonbrander 
-Donate link: ?
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10492778
 Tags: learn, learning, help, teaching, beginner, simple, documentation, one-column, threaded-comments, microformats
 Requires at least: 2.7
 Tested up to: 2.8.4
@@ -60,3 +60,5 @@ If you've run into unexpected behavior while using the theme, file a bug report 
 N/A
 
 == Changelog ==
+
+* 1.0
