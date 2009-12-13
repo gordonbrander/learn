@@ -26,7 +26,10 @@ if (have_posts()) :
 			<h2 class="entry-title"><a href="<?php the_permalink() ?>" title="Permanent Link to <?php the_title_attribute(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 			<div class="entry-content">
-				<?php the_content('Continued&hellip;'); ?>
+				<?php
+				the_content('Continued&hellip;');
+				wp_link_pages();
+				?>
 			</div>
 
 			<p><small>

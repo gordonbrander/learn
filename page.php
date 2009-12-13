@@ -19,7 +19,10 @@ if (have_posts()) :
 			<h2 class="entry-title"><?php the_title(); ?></h2>
 
 			<div class="entry-content">
-				<?php the_content('Continued&hellip;'); ?>
+				<?php
+				the_content('Continued&hellip;');
+				wp_link_pages();
+				?>
 			</div>
 
 		</div>

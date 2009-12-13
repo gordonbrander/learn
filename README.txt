@@ -4,9 +4,9 @@ Donate link: ?
 Tags: learn, learning, help, teaching, beginner, simple, documentation, single-column, threaded-comments
 Requires at least: 2.7
 Tested up to: 2.8.4
-Stable tag:
+Stable tag: trunk
 
-A simple theme for learning WordPress theme development. It has lots of comments to help you along.
+A simple theme for learning about WordPress theme development. It has lots of comments to help you along.
 
 == Description ==
 
