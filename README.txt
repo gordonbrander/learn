@@ -1,7 +1,7 @@
 === Theme Name ===
 Contributors: gordonbrander 
 Donate link: ?
-Tags: learn, learning, help, teaching, beginner, simple, documentation, single-column, threaded-comments
+Tags: learn, learning, help, teaching, beginner, simple, documentation, one-column, threaded-comments, microformats
 Requires at least: 2.7
 Tested up to: 2.8.4
 Stable tag: trunk
