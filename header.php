@@ -17,10 +17,6 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
-	<?php
-	// 
-	if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
 	<?php wp_head(); // leave this here: it's a hook for plugins ?>
 </head>
 <body <?php body_class(); ?>>

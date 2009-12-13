@@ -18,7 +18,7 @@
 	 * You can see where this sidebar is registered in functions.php.
 	 * More: <http://codex.wordpress.org/Function_Reference/dynamic_sidebar>
 	*/
-	if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-0') ) : ?>
+	if ( !dynamic_sidebar('sidebar') ) : ?>
 	<div class="widget">
 		<?php get_search_form(); ?>
 	</div>
