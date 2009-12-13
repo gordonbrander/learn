@@ -23,13 +23,22 @@
 					<?php the_excerpt(); ?>
 				</div>
 
-				<p><small>
-					Published on <?php the_time('F jS, Y') ?> in 
-					<?php the_category(', ') ?>
-					<?php the_tags('and tagged ', ', ', ''); ?> &bull;
-					<?php edit_post_link('Edit', '', ' &bull; '); ?>
-					<?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?>
-				</small></p>
+				<p>
+					<small>
+						Published by
+						<span class="author vcard">
+							<b class="fn"><?php the_author(); ?></b>
+						</span>
+						on
+						<abbr class="published" title="<?php the_time('Y-m-d\TH:i'); ?>">
+							<?php the_time('F jS, Y') ?>
+						</abbr> &bull;
+						Categories: <?php the_category(', ') ?> &bull;
+						<?php the_tags(' Tags: ', ', ', ' &bull; '); ?>
+						<?php edit_post_link('Edit', '', ' &bull; '); ?>
+						<?php comments_popup_link('No Comments &raquo;', '1 Comment &raquo;', '% Comments &raquo;'); ?>
+					</small>
+				</p>
 				
 			</div>
 
