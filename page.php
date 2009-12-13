@@ -24,7 +24,8 @@ if (have_posts()) :
 				wp_link_pages();
 				?>
 			</div>
-
+			
+			<?php comments_template(); // grabs comments.php ?>
 		</div>
 
 	<?php endwhile; ?>
