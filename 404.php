@@ -1,6 +1,6 @@
 <?php
 /*
- * 404.php displays the content 404 pages
+ * 404.php lets you theme your 404 pages
  * 404 is the "missing" page that will be served to a user when the URL they go to doesn't exist.
  * It overrides index.php.
  * See index.php for more info on page templates.
@@ -20,5 +20,4 @@
 	</div>
 
 <?php get_sidebar(); ?>
-
 <?php get_footer(); ?>
