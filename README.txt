@@ -3,7 +3,7 @@ Contributors: gordonbrander
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10492778
 Tags: learn, learning, help, teaching, beginner, simple, documentation, one-column, threaded-comments, microformats
 Requires at least: 2.7
-Tested up to: 2.8.4
+Tested up to: 2.9
 Stable tag: trunk
 
 A simple theme for learning about WordPress theme development. It has lots of comments to help you along.
@@ -12,12 +12,16 @@ A simple theme for learning about WordPress theme development. It has lots of co
 
 A simple theme for learning about WordPress theme development. It has lots of comments to help you along.
 
-## Features
+= Features =
 
 * It's simple!
 * Clean, semantic source code.
 * Everything is properly indented, so it's easy to read.
 * Lots and lots of documentation comments throughout the code, with URLs to learn more.
+
+= The Story =
+
+Learn was originally developed to teach WordPress theming to a college-level class after I realized there were no good starting points for WordPress theming.
 
 == Installation ==
 
@@ -27,21 +31,25 @@ A simple theme for learning about WordPress theme development. It has lots of co
 
 == Frequently Asked Questions ==
 
-= Will you add "X" to the theme? =
-
-Maybe so! Have a great idea? Send it my way. If I think it fits within the theme's goal of being as simple and helpful as possible, I'll add it. If I don't add it, you can always add it yourself and release your new theme. That's the beauty of open source!
-
 = What are those &lt;?php ?&gt; things? =
 
 WordPress is software written in a language called PHP. Basically, wherever you see those tags, WordPress is doing its magic. An intro to PHP would take more time than we have here, but the good news is you don't have to be rocket scientist to customize WordPress themes. Try tinkering and see how far that gets you. If you want to learn more, try getting an *intro to programming* book, or dig around here <http://www.php.net/tut.php>.
 
-= Where can I see a list of all the WordPress PHP functions I can use in my theme? =
+= Where learn more about WordPress themes? =
 
 <http://codex.wordpress.org/>.
+
+= Where can I see a list of all the &lt;?php ?&gt; template tags I can use? =
+
+<http://codex.wordpress.org/Template_Tags>
 
 = What's up with the doctype? =
 
 It's [HTML5](http://www.w3.org/TR/html5/).
+
+= Will you add "X" to the theme? =
+
+Maybe so! Have a great idea? Send it my way. If I think it fits within the theme's goal of being as simple and helpful as possible, I'll add it. If I don't add it, you can always add it yourself and release your new theme. That's the beauty of open source!
 
 = Why isn't this theme internationalized? =
 
