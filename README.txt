@@ -1,7 +1,7 @@
 === Theme Name ===
 Contributors: gordonbrander 
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=10492778
-Tags: learn, learning, help, teaching, beginner, simple, documentation, one-column, threaded-comments, microformats
+Tags: one-column, threaded-comments, microformats, flexible-width, white, light
 Requires at least: 2.7
 Tested up to: 2.9
 Stable tag: trunk
@@ -10,7 +10,7 @@ A simple theme for learning about WordPress theme development. It has lots of co
 
 == Description ==
 
-A simple theme for learning about WordPress theme development. It has lots of comments to help you along.
+A simple theme designed to help you learn about WordPress theme development. It has lots of documentation comments to teach you about WordPress themes along the way.
 
 = Features =
 
