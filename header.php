@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 
 	<div id="header">
-		<h1 class="site-name"><a href="<?php echo get_option('url'); ?>/"><?php bloginfo('name'); ?></a></h1>
+		<h1 class="site-name"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
 		<p class="site-description"><?php bloginfo('description'); ?></p>
 	</div>
 
